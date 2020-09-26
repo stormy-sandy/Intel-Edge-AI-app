@@ -12,7 +12,7 @@ The current application simply performs inference on a frame, gathers some stati
 continues onward to the next frame. 
 
 ## Tasks
-
+`
 Your tasks are to:
 
 - Add any code for MQTT to the project so that the node server receives the calculated stats
@@ -21,28 +21,28 @@ Your tasks are to:
   - Connecting to the MQTT client
   - Publishing the calculated statistics to the client
 - Send the output frame (**not** the input image, but the processed output) to the ffserver
-
+`
 ## Additional Information
-
+`
 Note: Since you are given the MQTT Broker Server and Node Server for the UI, you need 
 certain information to correctly configure, publish and subscribe with MQTT.
 - The MQTT port to use is 3001 - the classroom workspace only allows ports 3000-3009
 - The topics that the UI Node Server is listening to are "class" and "speedometer"
 - The Node Server will attempt to extract information from any JSON received from the MQTT server with the keys "class_names" and "speed"
-
+`
 ## Running the App
-
+`
 First, get the MQTT broker and UI installed.
 
 - `cd webservice/server`
 - `npm install`
 - When complete, `cd ../ui`
 - And again, `npm install`
-
+`
 You will need *four* separate terminal windows open in order to see the results. The steps
 below should be done in a different terminal based on number. You can open a new terminal
 in the workspace in the upper left (File>>New>>Terminal).
-
+`
 1. Get the MQTT broker installed and running.
   - `cd webservice/server/node-server`
   - `node ./server.js`
@@ -59,7 +59,7 @@ in the workspace in the upper left (File>>New>>Terminal).
   - To run the app, I'll give you two items to pipe in with `ffmpeg` here, with the rest up to you:
     - `-video_size 1280x720`
     - `-i - http://0.0.0.0:3004/fac.ffm`
-
+`
 Your app should begin running, and you should also see the MQTT broker server noting
 information getting published.
 
