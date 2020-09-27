@@ -11,7 +11,7 @@ already configured for FFMPEG too.
 The current application simply performs inference on a frame, gathers some statistics, and then 
 continues onward to the next frame. 
 
-## Tasks
+### Tasks
 
 Your tasks are to:
 
@@ -22,7 +22,7 @@ Your tasks are to:
   - Publishing the calculated statistics to the client
 - Send the output frame (**not** the input image, but the processed output) to the ffserver
 
-## Additional Information
+### Additional Information
 
 Note: Since you are given the MQTT Broker Server and Node Server for the UI, you need 
 certain information to correctly configure, publish and subscribe with MQTT.
@@ -30,7 +30,7 @@ certain information to correctly configure, publish and subscribe with MQTT.
 - The topics that the UI Node Server is listening to are "class" and "speedometer"
 - The Node Server will attempt to extract information from any JSON received from the MQTT server with the keys "class_names" and "speed"
 
-## Running the App
+### Running the App
 
 First, get the MQTT broker and UI installed.
 
