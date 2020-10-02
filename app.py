@@ -1,12 +1,16 @@
+#Libraries 
+
 import argparse
-import cv2
+import cv2 # for reading images
 import sys
-import numpy as np
+import numpy as np # for mathematical calculations
 import socket
 import json
 import paho.mqtt.client as mqtt
 from random import randint
 from inference import Network
+
+#Input file
 
 INPUT_STREAM = "test_video.mp4"
 CPU_EXTENSION = "/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so"
@@ -134,7 +138,3 @@ def main():
     args = get_args()
     model = ADAS_MODEL
     infer_on_video(args, model)
-
-
-if __name__ == "__main__":
-    main()
